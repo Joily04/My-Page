@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+    <style>
+        body {
+            background-color:bisque;
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        h1:first-of-type {
+            font-size: 3em;
+            animation: bounce 2s infinite, colorChange1 4s infinite;
+        }
+
+        h1:last-of-type {
+            font-size: 3em;
+            animation: pulse 2s infinite, colorChange3 5s infinite;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: yellowgreen;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: deepskyblue;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes colorChange1 {
+            0%, 100% {
+                color: palevioletred;
+            }
+            25% {
+                color: yellowgreen;
+            }
+            50% {
+                color: orange;
+            }
+            75% {
+                color: mediumslateblue;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes colorChange3 {
+            0%, 100% {
+                color: lightcoral;
+            }
+            25% {
+                color: lightseagreen;
+            }
+            50% {
+                color: lightsalmon;
+            }
+            75% {
+                color: lightgoldenrodyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO LAUNCHPAD</h1>
+    <h2>Land in Your Dreams Job By Enrolling In</h2>
+    <h1>PACKETPREP</h1>
+    <h3>Job Training & Placement</h3>
+</body>
+</html>
